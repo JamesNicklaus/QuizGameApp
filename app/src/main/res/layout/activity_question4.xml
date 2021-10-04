@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Question4"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/amountEarned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/amountEarned"
+        android:textColor="#1443D1"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question4"
+        android:textSize="20sp"
+        android:translationY="50dp"
+        android:layout_gravity="center"
+        android:minHeight="120dp"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationY="60dp">
+        <RadioButton
+            android:id="@+id/radio4_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a4_1"
+            android:onClick="radio4clicked" />
+        <RadioButton
+            android:id="@+id/radio4_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a4_2"
+            android:onClick="radio4clicked"/>
+        <RadioButton
+            android:id="@+id/radio4_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a4_3"
+            android:onClick="radio4clicked"/>
+        <RadioButton
+            android:id="@+id/radio4_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/a4_4"
+            android:onClick="radio4clicked"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:translationY="200dp"
+        android:text="@string/confirm"
+        android:background="#C51010"
+        android:onClick="confirmAnswer"/>
+
+
+
+</LinearLayout>
